@@ -1,7 +1,6 @@
 require 'spec_helper'
 
-describe ZipkinTracer::Sidekiq::Middleware do
-
+describe ZipkinTracer::Sidekiq::ServerMiddleware do
   describe 'call' do
     subject { described_class.new(config) }
     let(:job) { "test_job" }
